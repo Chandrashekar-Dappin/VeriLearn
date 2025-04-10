@@ -1,4 +1,4 @@
-# 🛠️ VeriLearn : Where Verilog meets vibess
+# 🛠️ VeriLearn : Where Verilog meets vibes 
 
 Welcome to **VeriLearn**, where I'll be sharing my  journey of verilog coding, a curated collection of simple and well-structured Verilog design examples. This repository is made for **beginners**, **students**, and **enthusiasts** who want to gain hands-on experience with digital design using **Verilog HDL**.
 
