@@ -11,3 +11,5 @@
 # 3Bit Gradually Up Down Counter
 ![Screenshot 2025-04-29 001338](https://github.com/user-attachments/assets/204fe0b8-33cd-4b39-b987-6e9c6f5aad7f)
 
+# Mod10 Counter
+![Screenshot 2025-04-29 002754](https://github.com/user-attachments/assets/96e9b386-73f0-46ec-966b-a037fa461010)
