@@ -7,3 +7,7 @@
 
 # 3Bit Up Down Counter
 ![Screenshot 2025-04-28 234851](https://github.com/user-attachments/assets/1aaee79e-e872-43b6-91bc-6429423fbb1a)
+
+# 3Bit Gradually Up Down Counter
+![Screenshot 2025-04-29 001338](https://github.com/user-attachments/assets/204fe0b8-33cd-4b39-b987-6e9c6f5aad7f)
+
