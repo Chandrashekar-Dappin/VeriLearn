@@ -1,4 +1,4 @@
-## If we want to start counting from certain then load and count
+## If we want to start counting from certain value then we load it and count from there.
 
 # Output
 
