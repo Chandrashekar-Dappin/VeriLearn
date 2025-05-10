@@ -15,3 +15,11 @@
 * *  
 *  
 ```
+
+# Star Increment Right Aligned
+```
+        *  
+      * *  
+    * * *  
+  * * * *
+```
