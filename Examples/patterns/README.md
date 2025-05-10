@@ -1,0 +1,8 @@
+# Star pattern Increment
+```
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+```
