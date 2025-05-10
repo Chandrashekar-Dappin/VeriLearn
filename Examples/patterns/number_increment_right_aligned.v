@@ -1,5 +1,5 @@
 module numbers_decrement;
-  integer i,j;
+  integer i,j,k;
   
   initial begin
     for (i=1 ; i<6 ; i=i+1) begin
@@ -7,7 +7,7 @@ module numbers_decrement;
         $write("  ");
       end
       
-      for(j=1 ; j<=i ; j=j+1)begin
+      for(k=1 ; k<=i ; k=k+1)begin
         $write("%0d ",j);
       end
       
