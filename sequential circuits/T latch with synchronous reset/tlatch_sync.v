@@ -12,7 +12,7 @@ module tlatch(t,clk,rst,q);
           if(t)
             temp<=~temp;
           else
-            temp<=~temp;
+            temp<=temp;
       
       q<=temp;       
      
