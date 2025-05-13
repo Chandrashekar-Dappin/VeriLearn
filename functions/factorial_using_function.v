@@ -35,3 +35,10 @@ initial begin
 end
   
 endmodule
+
+
+// Output
+the factorial of 3 is = 6
+the factorial of 4 is = 24
+the factorial of 2 is = 2
+the factorial of 5 is = 120
