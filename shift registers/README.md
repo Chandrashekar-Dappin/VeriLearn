@@ -5,8 +5,9 @@
 ![Screenshot 2025-05-14 001952](https://github.com/user-attachments/assets/e62f7854-955a-444d-9f44-9715fcd9020c)
 
 # PISO
-![Screenshot 2025-05-14 001952](https://github.com/user-attachments/assets/93c71573-291a-4c26-b425-8acbd5d15d4b)
+![Screenshot 2025-05-14 001952](https://github.com/user-attachments/assets/fbad487c-2fb9-4ed9-bf89-4ae9e09f620c)
 
 # PIPO
-![Screenshot 2025-05-13 225454](https://github.com/user-attachments/assets/0929c554-ed6b-4dff-9acf-f76fa7346f52)
+![Screenshot 2025-05-14 004100](https://github.com/user-attachments/assets/0518c99e-cc5c-4eaf-a6f1-56706d76f37b)
+
 
