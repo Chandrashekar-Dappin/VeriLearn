@@ -1,5 +1,6 @@
 # JKFF State Diagram
-![Uploading Screenshot 2025-05-15 230821.png…]()
+![Screenshot 2025-05-15 230821](https://github.com/user-attachments/assets/998bc610-f435-447d-adef-ed43fbae35d4)
+
 
 # Design Code
 ```
