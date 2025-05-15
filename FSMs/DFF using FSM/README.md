@@ -1,7 +1,7 @@
 # State Diagram of DFF
 ![Screenshot 2025-05-15 204344](https://github.com/user-attachments/assets/176ea0db-1501-4152-93ac-c7b0ee2db619)
 
-# DUT 
+# Design Code 
 ```
 
 module dff_fsm(clk,rst,d,q);
