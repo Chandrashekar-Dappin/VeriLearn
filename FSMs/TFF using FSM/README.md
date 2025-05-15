@@ -1,4 +1,4 @@
-# DFF State Diagram 
+# TFF State Diagram 
 ![Screenshot 2025-05-15 224051](https://github.com/user-attachments/assets/ec55c37e-b173-4cd7-942a-e51b08d2ba12)
 
 # Design Code
