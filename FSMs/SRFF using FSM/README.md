@@ -22,26 +22,29 @@ module srff_fsm(clk,rst,s,r,q);
   end
   
   always@(*) begin
-    case(ps)
-      s0 : if(s==0 & r==0)
-            ns = s0;
-      
-           else if(s==0 & r==1)  
-             ns = s0;
-      
-           else if(s==1 & r==0)
-            ns = s1;
-             
-      s1 : if(s==0 & r==0)
-            ns = s1;
-      
-           else if(s==1 & r==0)  
-             ns = s1;
-      
-      else if(s==0 & r==1)
-             ns = s0;
-      
-      default : ns = s0;
+    case (ps)
+      s0: begin
+        if (s == 0 && r == 0)
+          ns = s0;        // hold
+        else if (s == 1 && r == 0)
+          ns = s1;        // set
+        else if (s == 0 && r == 1)
+          ns = s0;        // reset again (stay in 0)
+        else
+          ns = s0;        // invalid: S=1, R=1 → treat as reset or stay
+      end
+
+      s1: begin
+        if (s == 0 && r == 0)
+          ns = s1;        // hold
+        else if (s == 1 && r == 0)
+          ns = s1;        // set again
+        else if (s == 0 && r == 1)
+          ns = s0;        // reset
+        else
+          ns = s0;        // invalid: S=1, R=1 → treat as reset
+      end
+    endcase
       
       
     endcase
