@@ -1,8 +1,6 @@
 # Mealy 10110 sequence detector overlapping
 ## Design code
 ```
-  // Code your testbench here
-  // or browse Examples
 
   module mealy_10110_ov(in_seq, clk,rst,det_out);
     input in_seq,clk,rst;
