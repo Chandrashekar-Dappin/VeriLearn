@@ -1,4 +1,4 @@
-module counter_up_down_3bit(clk,rst,count);
+module counter_up_down_3bit_gradually(clk,rst,count);
   input clk,rst;
   output reg [2:0] count;
   reg ctrl;
