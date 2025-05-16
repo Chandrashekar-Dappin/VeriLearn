@@ -2,7 +2,7 @@ module test;
   reg clk,rst;
   wire [2:0] count;
   
-  counter_up_down_3bit dut(clk,rst,count);
+  counter_up_down_3bit_gradually dut(clk,rst,count);
   
   initial begin
     clk=0;
