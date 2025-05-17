@@ -1,3 +1,6 @@
+# Mealy Sequence Detector Overlapping 01011_11001_1100
+![WhatsApp Image 2025-05-18 at 00 52 06_044d1851](https://github.com/user-attachments/assets/e271959f-d33e-4c3c-bf01-54ce7bd32cf3)
+
 # Design Code
 ```
 module mealy_seq_01011_11001_1100 (clk,rst,in_seq,det_out);
