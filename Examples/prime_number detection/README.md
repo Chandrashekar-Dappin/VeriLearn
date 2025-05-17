@@ -1,13 +1,10 @@
 # Output
 ```
-         5 is a prime number
-         5 is a prime number
-         6 is a prime number
-         6 is not a prime number
-         7 is not a prime number
-         7 is a prime number
-        13 is a prime number
-        20 is a prime number
-        20 is not a prime number
-         1 is not a prime number
+       Number       | Is Prime
+         2          | 1
+         4          | 0
+        11          | 1
+        15          | 0
+        29          | 1
+   1000003          | 1
 ```
