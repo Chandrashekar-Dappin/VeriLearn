@@ -3,8 +3,6 @@
 
 # Design Code
 ```
-// Code your testbench here
-// or browse Examples
 module single_port_ram(clk,we,en,data_in,addres,data_out);
   input clk,we,en;
   input [7:0] data_in;
