@@ -10,7 +10,11 @@ module single_port_ram(clk,we,en,data_in,addres,data_out);
   output reg [7:0] data_out;
   
   reg [7:0] mem [0:7];
-  
+
+  initial begin
+    data_out = 8'b00000000;
+  end
+
   always@(posedge clk) begin
     if(en)
       if(we)
