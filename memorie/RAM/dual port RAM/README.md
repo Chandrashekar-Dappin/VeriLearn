@@ -1,10 +1,10 @@
 # Dual Port Ram
 
-## The recent technology has developed dual port memories. Now it is possible to access the same address locations through two ports. Dual port memories have simplified many problems in designing digital systems. Both ROM and RAM can be of dual port. The block diagram of a true dual port RAM is shown below.
+### The recent technology has developed dual port memories. Now it is possible to access the same address locations through two ports. Dual port memories have simplified many problems in designing digital systems. Both ROM and RAM can be of dual port. The block diagram of a true dual port RAM is shown below.
 
 ![Screenshot 2025-05-19 163908](https://github.com/user-attachments/assets/2715a80f-b0f9-4537-a998-87386565e654)
 
-## The dual port memories have separate control line for both the ports. The various modes of a typical true dual port RAM are shown below. In the mode 1, writing of data is possible through both the ports but not on the same location. In mode 4, data can be read through both the ports even from the same address location. In mode 2 and 3, one port is busy in writing while another port is reading data.
+### The dual port memories have separate control line for both the ports. The various modes of a typical true dual port RAM are shown below. In the mode 1, writing of data is possible through both the ports but not on the same location. In mode 4, data can be read through both the ports even from the same address location. In mode 2 and 3, one port is busy in writing while another port is reading data.
 
 ![Screenshot 2025-05-19 164031](https://github.com/user-attachments/assets/2044492b-fd56-4fb1-8ffd-8ad5ccca8d5d)
 
