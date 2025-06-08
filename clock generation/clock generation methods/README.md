@@ -4,3 +4,4 @@
 ### 2. forever block
 ### 3. repeat block
 ### 4. manual generation
+### 5. using xor and xnor operators
