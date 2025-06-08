@@ -95,4 +95,44 @@ module clk1;
    $dumpvars(0,clk); 
   end 
 endmodule 
+
+
+
+    // 6. using xor / xnor
+
+module tb;
+  reg clk;
+  
+  initial begin
+    clk = 0;
+    #100 $finish();
+  end
+  
+  always #5 clk = clk ~^ 0;
+  
+  initial begin
     
+    $dumpfile("dump.vcd");
+    $dumpvars;
+  end
+  
+endmodule
+
+
+module tb;
+  reg clk;
+  
+  initial begin
+    clk = 0;
+    #100 $finish();
+  end
+  
+  always #5 clk = clk ^ 1;
+  
+  initial begin
+    
+    $dumpfile("dump.vcd");
+    $dumpvars;
+  end
+  
+endmodule    
