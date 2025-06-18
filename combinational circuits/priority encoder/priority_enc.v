@@ -7,7 +7,7 @@ module encoder_4_2(D,I);
     else if (D[1]) I=2'b01;
     else if (D[2]) I=2'b10;
     else if (D[3]) I=2'b11;
-    else I=3'b000;
+    else I=2'b00;
 
     
   end
