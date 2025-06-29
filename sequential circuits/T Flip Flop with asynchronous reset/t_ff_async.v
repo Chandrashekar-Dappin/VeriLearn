@@ -9,7 +9,6 @@ module tff_async(t,clk,rst,q);
         temp<=0;
       
       else
-        if(clk)
           if(t)
             temp<=~temp;
           else
