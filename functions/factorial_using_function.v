@@ -4,7 +4,7 @@ assign facto= fact(N);
 
 function automatic [63:0] fact(input [31:0] N);
 	begin
-	if(N>=1)
+	if(N>1)
 	fact= N*fact(N-1); // recursion
 
 	else
