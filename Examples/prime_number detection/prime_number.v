@@ -1,19 +1,16 @@
-// Code your design here
-module prime_number(number,is_prime);
-  input [31:0] number;
-  output reg is_prime;
-  integer i;
+module prime_detect(input [31:0] N, output reg is_prime);
   
-  always@(*) begin
+  always@(N) begin
+    
     is_prime = 1;
-    if(number<=1)
+    if(N<=1)
       is_prime = 0;
     
     else
-      for(i=2; i<=number/2 ; i=i+1) begin
-        if(number%i == 0) 
-          is_prime = 0;
-          
+    for(int i=2; i<=N/2; i=i+1)
+      if(N%i == 0)begin
+        is_prime = 0;
+        break;
       end
     
   end
@@ -21,21 +18,30 @@ module prime_number(number,is_prime);
 endmodule
 
 
-module Prime_number_tb;
-  reg [31:0] number;
+
+module tb;
+  reg [31:0] N;
   wire is_prime;
   
-  prime_number dut(number,is_prime);
+  prime_detect dut(N,is_prime);
   
   initial begin
-        $display("Number       | Is Prime");
-        number = 2; #10 $display("%d          | %b", number, is_prime);
-        number = 4; #10 $display("%d          | %b", number, is_prime);
-        number = 11; #10 $display("%d         | %b", number, is_prime);
-        number = 15; #10 $display("%d         | %b", number, is_prime);
-        number = 29; #10 $display("%d         | %b", number, is_prime);
-        number = 1000003; #10 $display("%d         | %b", number, is_prime);  // Prime
-        $finish;
+    N=12;
+    #1 N=19;
+    #1 N=7;
+    #1 N=15;
+    #1 N=17;
+    #1 N=1999;
+    
   end
+  
+  initial
+    forever@(N,is_prime) begin
+      #1;
+      if(is_prime == 0)
+        $display("%0d not prime",N);
+      else
+        $display("%0d  prime",N);
+    end
   
 endmodule
