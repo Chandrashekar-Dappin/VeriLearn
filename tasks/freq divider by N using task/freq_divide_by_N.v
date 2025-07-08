@@ -1,54 +1,60 @@
-module freq_divide #( parameter N=4) (input clk,rst,output clk_out);
+module freq_divider #(parameter N=4) (clk_in,rst,clk_out);
   
+  input clk_in,rst;
+  output reg clk_out;
+  int count;
   reg int_clk;
-  integer count;
-  
   assign clk_out = int_clk;
   
-  always@(clk) begin
-    if(rst) begin
-      int_clk=0;
-      count=0;
+  task clk_divide();
+   
+      forever@(posedge clk_in) begin
+      if(rst)
+        int_clk = 0;
       
-    end
-    
-    else begin
-      count=count+1;
-      
-      if(count%N == 0) begin
-        int_clk=~int_clk;
-        count=0;
+      else begin
+        count++;
+        if(count % N == 0)
+          int_clk = ~int_clk;
       end
-      
-    end
+        
+      end
     
+  endtask
+  
+  initial begin
+    clk_divide();
   end
   
 endmodule
+    
 
 
-//Testbench
 
-module freq_divide_tb;
-  
-  reg rst,clk;
+
+module tb;
+  defparam dut.N=8;
+  reg clk_in,rst;
   wire clk_out;
   
-  freq_divide dut(clk,rst,clk_out);
+  freq_divider dut(clk_in,rst,clk_out);
   
   initial begin
-    clk=0;
-    rst=1;
-    #10 rst=0;
     
-    #100 $finish;
+    clk_in <= 0;
+    rst <= 1;
+    #12 rst <= 0;
+    #200 $finish(2);
+    
   end
   
-  always #5 clk=~clk;
+  always #5 clk_in <= clk_in ^ 1;
   
   initial begin
     $dumpfile("dump.vcd");
-    $dumpvars(1,freq_divide_tb);
+    $dumpvars(1,tb);
   end
   
+  
 endmodule
+    
