@@ -5,7 +5,7 @@ module freq_divide #( parameter N=4) (input clk,rst,output clk_out);
   
   assign clk_out = int_clk;
   
-  always@(clk) begin
+  always@(clk) begin         // posedge clk or negedge clk
     if(rst) begin
       int_clk=0;
       count=0;
