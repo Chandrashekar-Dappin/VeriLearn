@@ -5,7 +5,7 @@ module pattern;
   int count;
   
   initial begin
-    for(int i=1; i<10; i++) begin
+    for(int i=1; i<8; i++) begin
       
       a[count] = 1'b1;
       count++;
