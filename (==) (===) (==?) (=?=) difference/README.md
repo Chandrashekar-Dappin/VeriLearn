@@ -1,5 +1,5 @@
-## ==?	X/Z on RHS are wildcards. X/Z on LHS are literal. If LHS is X/Z and RHS is 0/1, result is X.	(10X1 ==? 1X1X)	X
-## =?=	X/Z on either side are wildcards (match anything). Result is always 0 or 1.	(10X1 =?= 1X1X)	1
+## ==? :	X/Z on RHS are wildcards. X/Z on LHS are literal. If LHS is X/Z and RHS is 0/1, result is X.	(10X1 ==? 1X1X)	X
+## =?= : 	X/Z on either side are wildcards (match anything). Result is always 0 or 1.	(10X1 =?= 1X1X)	1
 
 
 ## Ex: imp
