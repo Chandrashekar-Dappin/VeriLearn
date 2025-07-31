@@ -1,6 +1,6 @@
->> case : 0,1,x,z,? are treated individually
->> casez : 0,1,x treated individually ........ z,? treated as don't care
->> casex : 0,1 treated individually ........ x,z,? treated as don't care
+## case : 0,1,x,z,? are treated individually
+## casez : 0,1,x treated individually ........ z,? treated as don't care
+## casex : 0,1 treated individually ........ x,z,? treated as don't care
 
 ## NOTE : in casez we can pass z and ? from inputs also and write it in casez alternatives also..it takes both side
 ```
