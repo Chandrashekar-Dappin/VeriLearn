@@ -1,3 +1,5 @@
+## NOTE : we need to sort using bubble-sort.....formula for bubble sort is n-i-1
+
 module array_1D;
   integer arr[0:9];
   integer i,j,temp;
@@ -12,7 +14,7 @@ module array_1D;
   
     
     for(i=0;i<10;i++) begin
-      for(j=0;j<10-i;j++)begin
+      for(j=0;j<9-i;j++)begin                                     // n-i-1
         if(arr[j]>arr[j+1]) begin
           temp = arr[j];
           arr[j] = arr[j+1];
