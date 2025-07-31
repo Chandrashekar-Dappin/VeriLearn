@@ -2,7 +2,7 @@ module factorial (input [31:0] N, output [63:0] facto);
 
 assign facto= fact(N);
 
-function automatic [63:0] fact(input [31:0] N);
+	function automatic [63:0] fact(input [31:0] N);        //automatic does not require if input and return types are of different size ....but required if both are of same size
 	begin
 	if(N>1)
 	fact= N*fact(N-1); // recursion
