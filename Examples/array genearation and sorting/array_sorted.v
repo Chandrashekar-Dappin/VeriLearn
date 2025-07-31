@@ -31,3 +31,30 @@ module array_1D;
     
     
 endmodule
+
+
+// 2nd method
+module tb;
+  
+  int a[10] = '{9,8,7,6,5,4,3,2,1,0};
+  int temp;
+  
+  initial begin
+    
+    for(int i=0; i<10; i++)
+      
+      for(int j=0; j<i; j++) begin
+        
+        if(a[j] > a[i]) begin
+          temp = a[j];
+          a[j] = a[i];
+          a[i] = temp;
+        end
+           
+      end
+    
+    $display(a);
+    
+  end
+  
+endmodule
